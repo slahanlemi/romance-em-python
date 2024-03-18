@@ -5,7 +5,7 @@ import turtle
 
 def enviar_pedido(resposta):
     if resposta == "Sim":
-        messagebox.showinfo("Pedido de Namoro - VPDev", "Pedido aceito! Eu te amo!")
+        messagebox.showinfo("Pedido de Chance - VPDev", "Pedido aceito! Até que enfim!")
         janela.destroy()
 
         pen = turtle.Turtle()
@@ -31,7 +31,7 @@ def enviar_pedido(resposta):
             pen.setpos(-68, 95)
             pen.down()
             pen.color('white')
-            pen.write("Eu te amo, meu amor!", font=("Verdana", 8, "bold"))
+            pen.write("Eu gosto muito de você, Ju", font=("Verdana", 8, "bold"))
 
         window = turtle.Screen()
         window.bgcolor("white")
@@ -55,7 +55,7 @@ def mover_botao_nao(event):
 
 # Criar a janela principal
 janela = tk.Tk()
-janela.title("Pedido de Namoro")
+janela.title("Pedido de chance")
 janela.resizable(False, False)
 
 # Criar canvas
@@ -73,7 +73,7 @@ for i in range(150, 300):
     canvas.create_line(0, i, 400, i, fill=cor)
 
 # Criar rótulo
-rotulo = tk.Label(janela, text="Você aceita namorar comigo?", font=("Arial", 16, "bold"), fg="white", bg=cor_fim)
+rotulo = tk.Label(janela, text="Você aceita me dar uma chance?", font=("Arial", 16, "bold"), fg="white", bg=cor_fim)
 rotulo.place(relx=0.5, rely=0.4, anchor=tk.CENTER)
 
 # Criar botões
