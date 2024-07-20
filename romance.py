@@ -5,7 +5,7 @@ import turtle
 
 def enviar_pedido(resposta):
     if resposta == "Sim":
-        messagebox.showinfo("Pedido de Chance - VPDev", "Pedido aceito! Até que enfim!")
+        messagebox.showinfo("convite de date - VPDev", "Pedido aceito! Até que enfim!")
         janela.destroy()
 
         pen = turtle.Turtle()
@@ -73,7 +73,7 @@ for i in range(150, 300):
     canvas.create_line(0, i, 400, i, fill=cor)
 
 # Criar rótulo
-rotulo = tk.Label(janela, text="Você aceita me dar uma chance?", font=("Arial", 16, "bold"), fg="white", bg=cor_fim)
+rotulo = tk.Label(janela, text="Você aceita sair comigo?", font=("Arial", 16, "bold"), fg="white", bg=cor_fim)
 rotulo.place(relx=0.5, rely=0.4, anchor=tk.CENTER)
 
 # Criar botões
